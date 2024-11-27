@@ -62,7 +62,7 @@
           >
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button class="btn btn-color-1">
             Contact
           </button>
         </div>
@@ -134,7 +134,8 @@
         src="./picturetechart/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#experience'"
+        <button onclick="scrollToTop()" id="scrollToTopBtn" title="Kembali ke atas"></button>
+
       />
     </section>
     <!-- End of About Me -->
@@ -238,56 +239,158 @@
         src="./picturetechart/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#projects'"
+        <button onclick="scrollToTop()" id="scrollToTopBtn" title="Kembali ke atas"></button>
       />
     </section>
     <!-- End of Experience -->
 
     <!-- Projects -->
-    <section id="projects">
-      <p class="section__text__p1">Explore My Projects</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./picturetechart/skilvul.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Landing Page
-            </h2>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./picturetechart/program.png"
-                  alt="Project 2"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">
-                Program Menghitung Limas Segiempat dan Prisma Segitiga
-              </h2>
-            </div>
+<section id="projects">
+  <p class="section__text__p1">Explore My Projects</p>
+  <h1 class="title">Projects</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./picturetechart/skilvul.png"
+            alt="Project 1"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">
+          Landing Page
+        </h2>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./picturetechart/program.png"
+            alt="Project 2"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">
+          Program Menghitung Limas Segiempat dan Prisma Segitiga
+        </h2>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./picturetechart/fibonacci.png"
+            alt="Project 3"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">
+          Program Menghitung Bilangan Fibonacci
+        </h2>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./picturetechart/bilanganacak.png"
+            alt="Project 4"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">
+          Program Menghitung Bilangan Acak
+        </h2>
+      </div>
+    </div>
+  </div>
+  <button onclick="scrollToTop()" id="scrollToTopBtn" title="Kembali ke atas">
+    <img
+      src="./picturetechart/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+    />
+  </button>
+</section>
+<!-- End of Projects -->
+
+    
+    <!-- Skills -->
+<section id="skills">
+  <div class="skills main-container">
+    <h3 class="skills-pre-title">Learning Path</h3>
+    <h1 class="skills-section-title">Skills & Education</h1>
+
+    <div class="skills-grid">
+      <!-- Left Section: Education -->
+      <div class="skills-left">
+        <!-- Education 1 -->
+        <div class="skills-education">
+          <div class="skills-line">
+            <div></div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
+          <div class="skills-education-info">
+            <h4 class="skills-education-title">Udayana University</h4>
+            <p>Bachelor's Degree - Information Technology</p>
+            <h4 class="skills-education-years">2024 - 2028</h4>
+          </div>
+        </div>
+
+        <!-- Education 2 -->
+        <div class="skills-education">
+          <div class="skills-line">
+            <div></div>
+          </div>
+          <div class="skills-education-info">
+            <h4 class="skills-education-title">SISMA School</h4>
+            <p>Science Major</p>
+            <h4 class="skills-education-years">2021 - 2024</h4>
+          </div>
+        </div>
+
+        <!-- Education 3 -->
+        <div class="skills-education">
+          <div class="skills-line">
+            <div></div>
+          </div>
+          <div class="skills-education-info">
+            <h4 class="skills-education-title">SPENTRI School</h4>
+            <p>All Major</p>
+            <h4 class="skills-education-years">2018 - 2021</h4>
+          </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <!-- End of Projects -->
 
-    <!-- Skills -->
-    <!-- End of Skills -->
+      <!-- Right Section: Skills -->
+      <div class="skills-right">
+        <p class="skills-description">
+          With over 2 years of experience in web development, 
+          I specialize in building responsive, user-friendly websites 
+          using modern technologies and collaborating effectively within 
+          teams to deliver high-quality projects.
+        </p>
+
+        <div class="skills-list">
+          <ul>
+            <li>HTML (2+ years): Expertise in semantic HTML, form handling, and building well-structured web pages.</li>
+            <li>CSS (2+ years): Proficient in responsive design, animations, and frameworks like Bootstrap and Tailwind CSS.</li>
+          </ul>
+          <ul>
+            <li>JavaScript (1.5 years): Skilled in DOM manipulation, API integration, and working with React.js.</li>
+            <li>Responsive Design (2 years): Creating designs optimized for devices of all sizes.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button onclick="scrollToTop()" id="scrollToTopBtn" title="Kembali ke atas">
+    <img
+      src="./picturetechart/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+    />
+  </button>
+</section>
+<!-- End of Skills -->
+
+
+
 
     <!-- Contact -->
     <section id="contact">

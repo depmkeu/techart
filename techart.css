@@ -1,5 +1,3 @@
-/* GENERAL */
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
@@ -370,34 +368,121 @@ article .icon {
 }
 
 /* PROJECTS SECTION */
+.project-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}
 
-#projects {
+/* Scroll to Top Button */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#scrollToTopBtn .arrow {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* SKILLS SECTION */
+#skills {
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+}
+
+.skills-left,
+.skills-right {
+  padding: 20px;
+}
+
+.skills-education {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.skills-line {
   position: relative;
 }
 
-.color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+.skills-line div {
+  width: 2px;
+  height: 100%;
+  background: #333;
+  position: relative;
 }
 
-.project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+.skills-line div:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #333;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: -7px;
 }
 
-.project-title {
-  margin: 1rem;
-  color: black;
+.skills-education-info h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #222;
 }
 
-.project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
+.skills-education-info p {
+  margin: 8px 0 16px;
+  color: #555;
+}
+
+.skills-education-years {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+/* Skills List */
+.skills-right p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.skills-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  margin-bottom: 10px;
+  line-height: 1.6;
 }
 
 /* CONTACT */
-
 #contact {
   display: flex;
   justify-content: center;
@@ -436,7 +521,13 @@ article .icon {
   height: 2.5rem;
 }
 
-/* footer scetion */
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+/* FOOTER SECTION */
 footer {
   padding: 4rem 0;
   background: var(--secondaryBackgroundColor);
